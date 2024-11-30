@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Первый блок (1) -->
+    <FrameLayout
+        android:onClick="onClickButton"
+        android:id="@+id/block1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/block3"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.15">
+        <ImageView
+            android:id="@+id/block1_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0044AA"
+            android:src="@drawable/ic_android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Третий блок (3) -->
+    <FrameLayout
+        android:id="@+id/block3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/block1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.15">
+        <ImageView
+            android:id="@+id/block3_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0066CC"
+            android:src="@drawable/ic_android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Четвертый блок (4) -->
+    <FrameLayout
+        android:id="@+id/block4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block1"
+        app:layout_constraintEnd_toStartOf="@id/block2"
+        app:layout_constraintWidth_percent="0.67"
+        app:layout_constraintHeight_percent="0.15">
+        <ImageView
+            android:id="@+id/block4_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0099CC"
+            android:src="@drawable/ic_android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Второй блок (2) -->
+    <FrameLayout
+        android:id="@+id/block2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/block4"
+        app:layout_constraintTop_toBottomOf="@id/block3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.33"
+        app:layout_constraintHeight_percent="0.15">
+        <ImageView
+            android:id="@+id/block2_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00CCFF"
+            android:src="@drawable/ic_android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Пятый блок (5) -->
+    <FrameLayout
+        android:id="@+id/block5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block4"
+        app:layout_constraintEnd_toStartOf="@id/block6"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.15">
+        <ImageView
+            android:id="@+id/block5_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#66CC33"
+            android:src="@drawable/ic_android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Шестой блок (6) -->
+    <FrameLayout
+        android:id="@+id/block6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/block5"
+        app:layout_constraintTop_toBottomOf="@id/block2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.15">
+        <ImageView
+            android:id="@+id/block6_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99CC00"
+            android:src="@drawable/ic_android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Седьмой блок (7) -->
+    <FrameLayout
+        android:id="@+id/block7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block5"
+        app:layout_constraintEnd_toStartOf="@id/block8"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.15">
+        <ImageView
+            android:id="@+id/block7_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#669900"
+            android:src="@drawable/ic_android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Восьмой блок (8) -->
+    <FrameLayout
+        android:id="@+id/block8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/block7"
+        app:layout_constraintTop_toBottomOf="@id/block6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.4">
+        <ImageView
+            android:id="@+id/block8_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF6600"
+            android:src="@drawable/ic_android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Девятый блок (9) -->
+    <FrameLayout
+        android:id="@+id/block9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/block7"
+        app:layout_constraintEnd_toStartOf="@id/block10"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.4">
+        <ImageView
+            android:id="@+id/block9_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF0066"
+            android:src="@drawable/ic_android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!-- Десятый блок (10) -->
+    <FrameLayout
+        android:id="@+id/block10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/block9"
+        app:layout_constraintTop_toBottomOf="@id/block8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.15">
+        <ImageView
+            android:onClick="onClickButton1"
+            android:id="@+id/block10_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFCC00"
+            android:src="@drawable/ic_android" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

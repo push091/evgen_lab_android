@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">lab7</string>
+    <string name="btn_filter">Показать собак</string>
+    <string-array name="breeds">
+        <item>Лабрадор</item>
+        <item>Хаски</item>
+        <item>Бульдог</item>
+        <item>Пудель</item>
+    </string-array>
+</resources>
